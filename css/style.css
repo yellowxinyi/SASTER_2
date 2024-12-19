@@ -59,7 +59,27 @@ a {
   right: 5%;
   color: aliceblue
 }
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 20px; /* 减少边距 */
+    text-align: center; /* 居中对齐内容 */
+  }
 
+  .menu {
+    display: flex;
+    flex-direction: column; /* 垂直排列菜单项 */
+    padding: 10px 0;
+  }
+
+  .menu ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li {
+    padding: 5px 0;
+  }
+}
 .mylunbo {
   margin: 20px auto;
   position: relative;
