@@ -1,0 +1,871 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+a {
+  color: #333;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.header {
+  padding: 20px 50px;
+  background: #0041e5;
+  box-shadow: 2px 3px 5px #ccc;
+  text-align: left;
+  padding-bottom: 0;
+  position: relative;
+  color: #333;
+}
+
+.header img {
+  border-radius: 10px;
+  width: 300px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 45px;
+  font-weight: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF
+}
+
+.hei20 {
+  height: 30px;
+}
+
+.header .time {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  color: aliceblue
+}
+
+.mylunbo {
+  margin: 20px auto;
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  /*background-color: purple;*/
+  overflow: hidden;
+}
+
+.mylunbo ul li a img {
+  width: 1200px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.mylunbo ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500%;
+}
+
+ul li {
+  float: left;
+  list-style-type: none;
+}
+
+ol li {
+  list-style-type: none;
+}
+
+.arrow-l,
+.arrow-r {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  /*高度40，上移20*/
+  width: 24px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-family: 'icomoon';
+  font-size: 18px;
+  z-index: 2;
+}
+
+.arrow-r {
+  right: 0;
+}
+
+.circle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  /*background-color: #fff;*/
+  border: 3px solid #0041e5;
+  margin: 0 3px;
+  border-radius: 50%;
+  /*鼠标经过显示小手*/
+  cursor: pointer;
+}
+
+.zsc {
+  width: 100%;
+}
+
+.zsc li {
+  width: 20%;
+  float: left;
+  margin-right: 76px;
+}
+
+.zsc .zsc_b {
+  margin-right: 0px;
+}
+
+.zsc li img {
+  width: 100%;
+  height: 300px;
+}
+
+.current {
+  background-color: #fff;
+}
+
+.menu {
+  text-align: center;
+  width: 1200px;
+  margin: 10px auto;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu li a {
+  font-weight: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.menu li {
+  float: left;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.menu li:hover {
+  background: #466DFF;
+}
+
+.menu li:hover a {
+  color: #fff;
+}
+
+.menu .select {
+  background: #466DFF;
+}
+
+.menu .select a {
+  color: #fff;
+}
+
+.tit {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.jieshao {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+}
+
+.jieshao .title {
+  margin-bottom: 50px;
+}
+
+.jieshao .text p {
+  text-indent: 2em;
+  margin-bottom: 20px;
+}
+
+.jieshao .text img {
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+.container{
+  text-align: center; /* 设置文字和图片居中 */
+}
+.container img {
+  width: 76%; /* 设置图片宽度 */
+  height: auto; /* 保持比例 */
+}
+.photo-container {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* 居中对齐 */
+  gap: 1px; /* 图片间距 */
+	margin: 0 auto; /* 居中对齐 */
+}
+.photo img {
+  width: 300px; /* 设置图片宽度 */
+  height: auto; /* 保持比例 */
+  margin: 10px; /* 左右间距 */
+}
+.photo-container1 {
+	display: flex;
+	flex-wrap: wrap; /* 自动换行 */
+	gap: 10px; /* 图片之间的间距 */
+	max-width: 600px; /* 容器最大宽度 */
+	margin: 0 auto; /* 居中对齐 */
+}
+.photo-container1 img {
+	width: calc(50% - 10px); /* 每张图片占 50%，减去间距 */
+	height: auto; /* 保持比例 */
+	border: 2px solid #ccc; /* 可选的边框 */
+	border-radius: 8px; /* 可选的圆角 */
+}
+.neirong {
+  font-size: 14px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.neirong span {
+  margin: 0 10px;
+}
+
+.neirong .neirong_box {
+  margin-top: 20px;
+}
+
+.neirong .preview_img {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border: 1px solid #ccc;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.neirong .preview_img>img {
+  width: 100%;
+  height: 100%;
+}
+
+.neirong .mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #eee;
+  opacity: 0.5;
+  border: 1px solid #ccc;
+}
+
+.neirong .big {
+  display: none;
+  position: absolute;
+  left: 410px;
+  top: 0;
+  width: 400px;
+  height: 400px;
+  z-index: 999;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.neirong .big img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.xiangq {
+  width: 1200px;
+  margin: 0px auto;
+  height: 1800px;
+}
+
+.le_nav {
+  width: 350px;
+  height: 650px;
+  background-color: #fff;
+  float: left;
+  margin-top: 50px;
+}
+
+.le_nav ul {
+  padding: 20px;
+}
+
+.le_nav li {
+  width: 300px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.le_nav li img {
+  width: 100px;
+  height: 100px;
+}
+
+.le_nav li div {
+  float: right;
+  width: 160px;
+}
+
+.le_nav li div span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+.ri_cont {
+  float: center;
+}
+
+.animal {
+  width: 1200px;
+  margin: 50px auto;
+  overflow: hidden;
+  background: #fff;
+}
+
+.butterfly {
+  width: 650px;
+  height: 300px;
+  float: left;
+}
+
+.butterfly img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.butterflys {
+  float: left;
+  width: 450px;
+  padding: 20px;
+}
+
+.animal_active {
+  background: #2f4f4f;
+}
+
+.animal_active h1 {
+  color: #fff !important;
+}
+
+.animal_active a {
+  color: #fff !important;
+}
+
+.animal button {
+  margin-top: 10px;
+  padding: 5px 20px;
+}
+
+.fly {
+  width: 650px;
+  height: 300px;
+  float: right;
+}
+
+.fly img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flys {
+  float: left;
+  width: 400px;
+  padding: 20px;
+}
+
+.flys h1 {
+  margin-bottom: 20px;
+}
+
+.flies {
+  width: 300px;
+  float: left;
+}
+
+.flies img {
+  display: block;
+  width: 100%;
+}
+
+.fliess {
+  float: right;
+  width: 450px;
+}
+
+.swiftly {
+  width: 300px;
+  float: right;
+}
+
+.swiftly img {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.swiftlys {
+  float: right;
+  width: 450px;
+}
+
+.form {
+  width: 1200px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 30px;
+}
+
+form input {
+  display: block;
+  width: 500px;
+  height: 35px;
+  padding-left: 10px;
+  margin: 30px auto;
+}
+
+form textarea {
+  display: block;
+  padding: 10px;
+  width: 500px;
+  height: 120px;
+  margin: auto;
+}
+
+.submit button {
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 40px;
+  color: #FFF;
+  background: #000;
+  border: none;
+  margin: 30px auto;
+}
+
+.food form {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.food form div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.title h3 {
+  position: relative;
+  font-size: 26px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.title h3::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: ##214EF7;
+  left: 0;
+  right: 0;
+  margin: 10px auto 0 auto;
+}
+
+#mytext {
+  width: 60px;
+  font-size: 30px;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  margin: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.yk_box {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.yk_box .yk_bar {
+  width: 100%;
+}
+
+.yk_box .yk_bar .info {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: #ccc;
+  color: #000;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.yk_box .yk_bar .active {
+  background: ##214EF7;
+  color: #fff;
+}
+
+.yk_box .yk_content {
+  padding: 50px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.yk_box .yk_content h2 {
+  letter-spacing: 3px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.yk_box .yk_content img {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.yk_box .yk_content p {
+  line-height: 2;
+  text-indent: 2em;
+  margin-bottom: 20px;
+}
+
+a {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 300;
+  line-height: 2;
+}
+
+.foot {
+  width: 100%;
+  padding: 30px 0;
+  font-weight: 300;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+.ls_box {
+  padding-top: 50px;
+}
+
+.ls_box .ls_content {
+  background: #fff;
+  padding: 50px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.ms_box {
+  padding-top: 50px;
+}
+
+.ms_box .food {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 30px;
+  background: #fff;
+}
+
+.food_box {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.food_box .info {
+  width: 24%;
+  background: #fff;
+  padding-bottom: 20px;
+}
+
+.food_box .info img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.food_box .info p.tips {
+  line-height: 1;
+  color: red;
+  font-size: 12px;
+}
+
+.food_box .text {
+  padding: 10px 20px;
+}
+
+.food_box .text p.desc {
+  height: 300px;
+  font-size: 12px;
+}
+
+.food_box .text h3 {
+  margin-bottom: 5px;
+}
+
+.jd_box {
+  width: 1200px;
+  margin: 50px auto;
+  color: #333;
+}
+
+.jd_box li {
+  cursor: pointer;
+}
+
+.jd_box a {
+  color: #333;
+}
+
+.jd_box .container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.jd_box .wrapper {
+  padding: 40px 0;
+}
+
+.jd_box .card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.jd_box .card__picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.jd_box .card-infos {
+  padding: 20px;
+  background: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.jd_box .card__title {
+  font-family: 'Hind';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.jd_box .card__text {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+  color: #86888A;
+}
+
+.jd_box .card__text--high {
+  font-weight: 600;
+}
+
+.jd_box .header {
+  background: ##214EF7;
+  height: 160px;
+  display: flex;
+}
+
+.jd_box .header__title {
+  margin: auto;
+  font-weight: 300;
+  color: #fff;
+}
+
+.jd_box .header__title--high {
+  font-weight: 600;
+}
+
+.jd_box .sortable__nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.jd_box .nav__link {
+  padding: 0 20px 4px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 300;
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+
+.jd_box .nav__link.is-active {
+  border-color: ##214EF7;
+}
+
+.jd_box .footer__list.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jd_box .list__item.item {
+  display: flex;
+}
+
+.jd_box .item__link.link {
+  margin: 0;
+}
+
+.jd_box .item__link.link:not(:first-child) {
+  margin-left: 20px;
+}
+
+.top {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #333333;
+  color: #fff;
+  font-weight: 600;
+  position: fixed;
+  right: 40px;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top img {
+  width: 60%;
+}
+
+.ls_content .menu_list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ls_content .menu_head {
+  padding: 20px;
+  padding-left: 38px;
+  font-size: 20px;
+  color: #525252;
+  cursor: pointer;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  position: relative;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.ls_content .menu_list {
+  background: #f1f1f1;
+}
+
+.ls_content .menu_list .current {
+  background: #f1f1f1;
+}
+
+.ls_content .menu_body {
+  border-left: 1px solid #e1e1e1;
+  background: #fff;
+  border-right: 1px solid #e1e1e1;
+  padding: 30px;
+}
+
+.ls_content .center {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 两列 */
+  gap: 10px; /* 图片之间的间距 */
+}
+
+.image-grid img {
+  width: 100%; /* 图片宽度占满单元格 */
+  height: auto; /* 保持图片比例 */
+}
