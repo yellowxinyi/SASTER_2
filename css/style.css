@@ -59,20 +59,7 @@ a {
   right: 5%;
   color: aliceblue
 }
-@media (max-width: 768px) {
-  .header {
-    padding: 15px 20px; /* 减小内边距 */
-    text-align: center; /* 在小屏幕上居中对齐 */
-  }
-  
-  .header img {
-    width: 40px; /* 缩小图标大小 */
-  }
-  
-  .header h1 {
-    font-size: 18px; /* 调整标题字体大小 */
-  }
-}
+
 .mylunbo {
   margin: 20px auto;
   position: relative;
@@ -882,3 +869,23 @@ p {
   width: 100%; /* 图片宽度占满单元格 */
   height: auto; /* 保持图片比例 */
 }
+
+@media screen and (max-width: 600px) {
+            header {
+                padding: 8px 0;
+            }
+			body {
+        		background-attachment: scroll; /* 让背景在小屏幕上滚动 */
+    		}
+			foot {
+                padding: 8px 0;
+            }
+            .content h1 {
+                font-size: 1.5em;
+            }
+
+            .content p {
+				text-indent: 2em;  /* 首行缩进2个字符 */
+                font-size: 1em;
+            }
+        }
