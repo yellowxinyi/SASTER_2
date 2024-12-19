@@ -25,6 +25,7 @@ a {
 }
 
 .header {
+  width: 100%;
   padding: 20px 50px;
   background: #0041e5;
   box-shadow: 2px 3px 5px #ccc;
@@ -870,13 +871,10 @@ p {
   height: auto; /* 保持图片比例 */
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
             .header {
                 padding: 8px 0;
             }
-			body {
-        		background-attachment: scroll; /* 让背景在小屏幕上滚动 */
-    		}
 			.foot {
                 padding: 8px 0;
             }
